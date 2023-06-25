@@ -1,12 +1,17 @@
-<h2>Login Page</h2>
-
-<form class="login-form" (submit)="onSubmit($event)">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-
-    <button type="submit" class="login-button">Login</button>
-    <button type="button" (click)="onCancel()" class="cancel-button">Cancel</button>
-</form>
+<div class="container">
+    <div>
+        <h2>Login</h2>
+        
+        <a routerLink="/" class="back-link">< Back</a>
+        <form class="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required [(ngModel)]="loginObj.username">
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required [(ngModel)]="loginObj.password">
+        
+            <button type="button" (click)="onLogin()" class="login-button">Login</button>
+            <button type="button" (click)="onCancel()" class="cancel-button">Cancel</button>
+        </form>
+    </div>
+</div>

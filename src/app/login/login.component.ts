@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -6,13 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 
-export class LoginComponent {
-  onSubmit(event: Event) {
-    event.preventDefault();
-    const form = event.target as HTMLFormElement;
-    const username = form.elements.namedItem('username') as HTMLInputElement;
-    const password = form.elements.namedItem('password') as HTMLInputElement;
-    console.log(`Username: ${username.value}, Password: ${password.value}`);
+export class LoginComponent implements OnInit{
+  signUpUsers: any[] = [];
+
+  loginObj: any = {
+    username: '',
+    password: ''
+  };
+
+  constructor() { }
+
+  ngOnInit(): void {
+    const localData = localStorage.getItem('signUpUsers');
+    if (localData) {
+      this.signUpUsers = JSON.parse(localData);
+    }
+  }
+
+  onLogin() {
+    const userExist = this.signUpUsers.find(user => user.username === this.loginObj.username && user.password === this.loginObj.password);
+    if (userExist != undefined) {
+      alert('Login Success');
+    }
+    else {
+      alert('Login Failed');
+    }
   }
 
   onCancel() {

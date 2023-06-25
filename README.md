@@ -11,7 +11,7 @@
   
 ## Description :clipboard:
 
-This project is a simple login page built with Angular, made with the intention of knowing better and explore the framework. It allows users to enter their username and password and see this data in the console log of the application.
+This project is a simple login page built with Angular, made with the intention of knowing better and explore the framework.
 
 ## Learnings :brain:
 
