@@ -1,0 +1,44 @@
+/* FILEPATH: /nfs/homes/pmessett/angular/angular-login-page/src/app/home/home.component.css */
+
+/* Center the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container div {
+    text-align: center;
+}
+
+.container div a {
+    display: block;
+    margin: 20px 100px;
+}
+
+/* Style the title */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Style the button */
+a {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #2c3e50;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    border: 1px solid #8ba2bd;
+    background-color: #0069d9;
+}
