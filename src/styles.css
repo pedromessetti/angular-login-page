@@ -1,23 +1,40 @@
-/* FILEPATH: /nfs/homes/pmessett/angular/login_page/src/styles.css */
-
 @font-face {
-  font-family: 'Ubuntu';
-  src: url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+	font-family: 'Ubuntu';
+	src: url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
 }
 
-body{
+body {
 	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
+	background-image: url('./assets/background.jpg');
+	background-position: center;
+	animation: sky 60s linear infinite;
 }
 
-body, button, input {
-  font-family: 'Ubuntu', sans-serif;
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    text-align: center;
+}
+
+body,
+button,
+input {
+	font-family: 'Ubuntu', sans-serif;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
+}
+
+@keyframes sky {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: -1000px 0;
+	}
 }

@@ -11,7 +11,7 @@
   
 ## Description :clipboard:
 
-This project is a simple login page built with Angular, made with the intention of knowing better and explore the framework.
+This project is a login page built with Angular, made with the intention of knowing better and explore the framework.
 
 ## Learnings :brain:
 

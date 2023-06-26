@@ -5,14 +5,6 @@
     height: 80vh;
 }
 
-h2 {
-    text-align: center;
-    color: #2c3e50;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-/* Style login form container */
 .login-form {
     width: 80%;
     max-width: 400px;
@@ -20,66 +12,59 @@ h2 {
     padding: 2rem;
     border: 1px solid #bdc3c7;
     border-radius: 5px;
-    background-color: #ecf0f1;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Style form fields */
 .login-form input {
     width: 90%;
     padding: 1rem;
     margin: 1rem 0;
     display: inline-block;
     border: none;
+    border-radius: 3px;
     border-bottom: 2px solid #bdc3c7;
-    background-color: #ecf0f1;
+    background-color: #f2f2f2;
     font-size: 1.2rem;
     transition: 0.5s ease;
 }
 
 .login-form input:focus {
     outline: none;
+    background-color: #e6e6e6;
     border-bottom: 2px solid #2c3e50;
 }
 
-/* Style login button */
-.login-button {
-    background-color: #2c3e50;
-    color: white;
+.login-form button {
+    width: 50%;
     padding: 1rem;
-    margin: 2rem 0 1rem;
+    margin-bottom: 1rem 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
+    color: #ffffff;
     cursor: pointer;
-    font-size: 1.2rem;
     transition: background-color 0.3s ease;
+}
+
+.login-button {
+    background-color: #4CAF50;
 }
 
 .login-button:hover {
-    background-color: #0069d9;
+    background-color: #45a049;
 }
 
-/* Style cancel button */
 .cancel-button {
-    background-color: #c0392b;
-    color: white;
-    padding: 1rem;
-    margin: 0 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+    background-color: #f44336;
 }
 
 .cancel-button:hover {
-    background-color: #e74c3c;
+    background-color: #d32f2f;
 }
 
-/* Style back button */
 .back-link {
     display: flex;
-    margin-bottom: 10px;
-    color: #007bff;
+    margin: 10px 20px;
+    color: #f2f2f2;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
@@ -87,37 +72,30 @@ h2 {
 }
 
 .back-link:hover {
-    color: #0056b3;
+    color: #b2b2b2;
 }
 
 @media only screen and (max-width: 600px) {
-    /* Style login form container for mobile */
+
+    h2 {
+        margin-bottom: 0;
+    }
+
     .login-form {
-        width: 90%;
+        width: 70%;
         max-width: 350px;
         padding: 1rem;
     }
 
-    /* Style form fields for mobile */
-    .login-form input[type=email],
-    .login-form input[type=password] {
-        width: 90%;
+    .login-form input {
         padding: 0.8rem;
         margin: 0.8rem 0;
         font-size: 1rem;
     }
 
-    /* Style login button for mobile */
-    .login-button {
-        padding: 0.8rem;
-        margin: 1.5rem 0 0.8rem;
-        font-size: 1rem;
-    }
-
-    /* Style cancel button for mobile */
-    .cancel-button {
-        padding: 0.8rem;
-        margin: 0 0.8rem;
+    .login-form button {
+        padding: 0.5rem;
+        margin: 0;
         font-size: 1rem;
     }
 }
